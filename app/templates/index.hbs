@@ -1,0 +1,43 @@
+<div class="home">
+    <div class="top-section">
+        <img src="/assets/images/prestonblaylock.jpg" alt="Photo of Preston Blaylock" title="Photo of Preston Blaylock" />
+    </div>
+    <div class="introduction-text container main-text">
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+        </p>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+        </p>
+    </div>
+
+
+
+    {{#parallax-content id="current-project-bg" image="/assets/images/bg.jpg" }}
+        <div class="current-project-image"><img src="/assets/images/mtntk.png"/></div>
+        <div class="current-project-description">
+            <h2 class="font-orange">MTNTK Performance</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam et mi at neque pharetra sodales in et enim. Vivamus non egestas dolor. Aliquam erat volutpat. Nam maximus ut arcu a posuere. Aenean tempor, diam vel cursus rhoncus, urna ligula hendrerit massa, vel bibendum dui mauris suscipit ligula. Morbi aliquet rhoncus fringilla. Integer elementum eros lectus, ac convallis libero ullamcorper non. In hac habitasse platea dictumst. Sed elementum lobortis nulla, sed luctus mauris mattis a. Ut aliquet vehicula dapibus. Ut aliquam ante eget porta molestie. Nunc tellus arcu, ultricies nec mi in, blandit egestas dui. Maecenas vehicula lorem eu eros hendrerit, quis sollicitudin orci pulvinar.</p>
+            {{#link-to 'index' class="current-project-btn"}}Learn More{{/link-to}}
+        </div>
+{{!--         <div class="current-project-image"><img src="{{model.current.image}}"/></div>
+        <div class="current-project-description">
+            <h2 class="font-orange">{{model.current.title}}</h2>
+            <p>{{model.current.description}}</p>
+            {{#link-to 'index' class="current-project-btn"}}Learn More{{/link-to}}
+        </div> --}}
+    {{/parallax-content}}
+
+    <div class="development">
+      {{background-cog cogId="cog-1"}}
+      {{background-cog cogId="cog-2" direction="backwards"}}
+    </div>
+
+
+    <h1 class="font-orange">Skills</h1>
+    <hr class="border-bottom">
+    <div class="skills container">
+        {{skill-list skills=model.skills}}
+    </div>
+{{!--     <h1 class="font-orange">Blog</h1>
+    <hr class="border-bottom"> --}}
+    {{outlet}}
+</div>

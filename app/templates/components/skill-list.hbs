@@ -1,0 +1,8 @@
+{{yield}}
+<ul>
+    {{#each skills as |skill|}}
+        <li>
+            {{#link-to 'index'}}<img src="{{skill.image}}" alt="{{skill.name}}" title="{{skill.name}}" />{{/link-to}}
+        </li>
+    {{/each}}
+</ul>

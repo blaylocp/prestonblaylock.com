@@ -1,0 +1,39 @@
+<footer class="site-footer">
+    <div class="footer-top container-fluid">
+        <div class="row">
+            <div class="col-sm-4">
+                <ul class="menu">
+                    <li>{{#link-to 'portfolio'}}Portfolio{{/link-to}}</li>
+                    <li>{{#link-to 'about'}}About{{/link-to}}</li>
+                    <li>{{#link-to 'blog'}}Blog{{/link-to}}</li>
+                    <li>{{#link-to 'contact'}}Contact{{/link-to}}</li>
+                </ul>
+            </div>
+            <div class="col-sm-4">
+                <div class="form-group search">
+                    {{input class="form-control" placeholder="Search"}}<button class="btn">Search</button>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <ul class="social-icons">
+                    <li class="social-icon linkedin">
+                        <a href='https://www.linkedin.com/in/preston-blaylock-b63a8b46' class='social-icon linkedin' >Linked In</a>
+                    </li>
+                    <li class="social-icon behance">
+                        <a href='https://www.behance.net/prestonblaylock' class='social-icon behance' >Behance</a>
+                    </li>
+                    <li class="social-icon github">
+                        <a href='https://github.com/blaylocp/' class='social-icon github' >Github</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom container-fluid">
+        <div class="row">
+            <div class="col-sm-9"></div>
+            <div class="col-sm-3">&copy; Copyright 2016 Preston Blaylock<br>All Rights Reserved</div>
+        </div>
+    </div>
+</footer>
+{{yield}}

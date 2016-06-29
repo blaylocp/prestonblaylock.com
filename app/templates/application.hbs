@@ -1,3 +1,21 @@
-<h2 id="title">Welcome to Ember</h2>
+<nav id="slideout-menu" class="{{if slide "slideout" }}">
+    <div class="icon-close">
+        <h2>Menu  {{#menu-close slideMenu="slideMenu" }}<span class="glyphicon glyphicon-remove" aria-hidden="true"></span>{{/menu-close}}</h2>
+    </div>
 
-{{outlet}}
+    <ul>
+        <li>{{#link-to 'portfolio' action="slideMenu"}}Portfolio{{/link-to}}</li>
+        <li>{{#link-to 'about'}}About{{/link-to}}</li>
+        <li>{{#link-to 'blog'}}Blog{{/link-to}}</li>
+        <li>{{#link-to 'contact'}}Contact{{/link-to}}</li>
+    </ul>
+</nav>
+<div class="page-wrap {{if slide "slideout"}}">
+    <div id="main">
+            {{application-header slideMenu="slideMenu"}}
+        <div>
+            {{outlet}}
+        </div>
+    </div>
+</div>
+{{application-footer}}

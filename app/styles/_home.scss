@@ -1,0 +1,149 @@
+.home {
+    font-family: $body-text;
+    .top-section{
+        padding-top: 100px;
+        background: $black;
+        img{width: 100%; max-width: 940px; margin: auto; display: block;}
+    }
+    .introduction-text{
+        margin: 60px auto 0;
+        color: #777;
+        font-size: 20px;
+        font-weight: 200;
+    }
+    .parallax-container{
+        width: 100%;
+        height: 710px;
+        margin: 50px 0 80px;
+        overflow: hidden;
+        position: relative;
+
+        .current-project-btn{
+            color: $black;
+            background: $orange;
+            padding: 2px 10px;
+            margin-top: 30px;
+            width: 200px;
+            font-size: 2em;
+            display: inline-block;
+            text-decoration: none;
+
+            &:after{
+                font-family: FontAwesome;
+                content:"\f054";
+                float: right;
+            }
+
+            &:hover{
+                opacity: .7;
+            }
+        }
+        .current-project-image,
+        .current-project-description{
+            color: #aaa;
+
+            h2{
+                margin-top: 0;
+                text-align: left;
+            }
+        }
+        .current-project-image{
+            position: relative;
+            top: -780px;
+
+            img{
+                padding: 0 30px;
+                width: 100%;
+            }
+        }
+
+        .current-project-description{
+            position: relative;
+            top: -770px;
+            padding: 0 30px;
+
+        }
+        @media (min-width: 700px) {
+            height: 810px;
+            .current-project-image{top: -900px;}
+            .current-project-description{top: -830px;}
+        }
+        @media (min-width: 992px) {
+            height: 550px;
+
+            .current-project-image,
+            .current-project-description{
+                position: absolute;
+                width: 100%;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 50%;
+                float: left;
+
+            }
+
+            .current-project-description{
+                right: 0;
+            }
+        }
+
+
+    }
+
+    .development{
+      #cog-1{
+        //background: url('/assets/images/icons/cog.svg');
+        width: 300px;
+        height: 300px;
+        position: relative;
+        left: 330px;
+        background-color: red;
+        -webkit-mask-image: url('/assets/images/icons/cog.svg');
+        mask-image: url('/assets/images/icons/cog.svg');
+      }
+      #cog-2{
+        background: url('/assets/images/icons/cog.svg');
+        width: 150px;
+        height: 150px;
+        position: relative;
+        left: 530px;
+        bottom: 50px;
+      }
+    }
+
+    .skills{
+        ul{
+            padding: 0;
+            list-style: none;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            align-items: center;
+            li{
+                width: 100%;
+                padding: 20px;
+                text-align: center;
+                height: 150px;
+                position: relative;
+                a{
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    max-width:200px;
+                    display: inline-block;
+                    img{
+                        max-width: 100%;
+                        max-height: 80px;
+                    }
+                }
+                @media (min-width: 530px) {
+                    width: 50%;
+                }
+                @media (min-width: 992px) {
+                    width: 33.33%;
+                }
+            }
+        }
+    }
+}

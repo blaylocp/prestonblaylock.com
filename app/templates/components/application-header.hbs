@@ -1,0 +1,29 @@
+<div class="container-fluid header-wrapper {{shrink}}">
+    <header class="row main-menu-header ">
+        <div class="col-xs-10 col-sm-5 logo-wrapper">
+            <div class="logo-container">
+                {{#link-to 'index'}}
+                    <img src="/assets/images/icons/logo.png" alt="Preston Blaylock" title="Preston Blaylock" class="logo-img" />
+                {{/link-to}}
+            </div>
+            <div >
+                <div class="logo-title">{{#link-to 'index'}}Preston Blaylock{{/link-to}}</div>
+                <div class="logo-subtitle">
+                    <span>Programmer</span><span class="dot">&middot;</span><span>Designer</span><span class="dot">&middot;</span><span>Photographer</span>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-2 menu-icon">
+            {{#menu-btn slideMenu="slideMenu" }}<span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>{{/menu-btn}}
+        </div>
+        <nav class="col-xs-12 col-sm-7 main-menu">
+            <ul class="menu">
+                <li>{{#link-to 'portfolio'}}Portfolio{{/link-to}}</li>
+                <li>{{#link-to 'about'}}About{{/link-to}}</li>
+                <li>{{#link-to 'blog'}}Blog{{/link-to}}</li>
+                <li>{{#link-to 'contact'}}Contact{{/link-to}}</li>
+            </ul>
+        </nav>
+    </header>
+</div>
+{{yield}}

@@ -1,0 +1,80 @@
+/* Color */ 
+$white: #fff;
+$black: #000;
+$orange: #ff7f16;
+$medium-grey: #ddd;
+$dark-grey: #5b5b5b;
+
+$medium-gray: $medium-grey;
+$dark-gray: $dark-grey;
+
+/* Menu */ 
+$slideMenu: 285px;
+
+
+/* Font Color Classes */
+.font-orange{
+  color: $orange;
+}
+
+
+
+/* Animations */
+@keyframes shrink {
+  0% {
+    margin: 20px auto;
+    height: 60px;
+  }
+  100% {
+    margin: 0 auto;
+    height: 30px;
+  }
+}
+
+@keyframes shrinkReverse {
+  0% {
+    margin: 0 auto;
+    height: 30px;
+  }
+  100% {
+    margin: 20px auto;
+    height: 60px;
+  }
+}
+
+
+@keyframes slideMenu {
+  from {
+  	right: -285px;
+  }
+  to {
+	 right: 0px;
+  }
+}
+
+@keyframes slideMenuReverse {
+  from {
+  	right: 0px;
+  }
+  to {
+	 right: -285px;
+  }
+}
+
+@keyframes slidebody {
+  from {
+  	right: 0px;
+  }
+  to {
+	 right: 285px;
+  }
+}
+
+@keyframes slidebodyReverse {
+  from {
+  	right: 285px;
+  }
+  to {
+	 right: 0;
+  }
+}

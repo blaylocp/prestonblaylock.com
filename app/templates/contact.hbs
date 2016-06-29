@@ -1,0 +1,27 @@
+<div class="about">
+    <img class="header-img" src="/assets/images/preston-blaylock-mesa-falls.jpg" alt="Photo of Mesa Falls" title="Photo of Mesa Falls" />
+    <h1 class="font-orange">Contact</h1>
+    <hr class="border-bottom">
+    <form class="contact-form">
+        <div class="form-group">
+            <div class="icon-field">
+                {{input type="text" class="form-control" placeholder="* Name"}}
+                <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+            </div>
+            <div class="icon-field">
+                {{input type="text" class="form-control" placeholder="* Email"}}
+                <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
+            </div>
+            <div class="icon-field">
+                {{input type="text" class="form-control" placeholder="* Subject"}}
+                <span class="glyphicon glyphicon-tag" aria-hidden="true"></span>
+            </div>
+            <div class="icon-field">
+                {{textarea type="text" class="form-control" placeholder="* Message" autoresize=true rows=6}}
+                <span class="glyphicon glyphicon-comment" aria-hidden="true"></span>
+            </div>
+            {{input type="submit" class="btn" value="Submit"}}
+        </div>
+    </form>
+    {{outlet}}
+</div>
