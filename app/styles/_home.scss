@@ -143,6 +143,30 @@
           mask-image: url('/assets/images/icons/cog-4.svg');
         }
       }
+      #cog-5{
+        width: 300px;
+        height: 300px;
+        position: relative;
+        left: 757px;
+        bottom: 625px;
+        transform: rotate("1deg");
+        @supports (-webkit-mask-image: url('/assets/images/icons/cog-5.svg')){
+          background-color: #cac7c7;
+          -webkit-mask-image: url('/assets/images/icons/cog-5.svg');
+          mask-image: url('/assets/images/icons/cog-5.svg');
+        }
+      }
+      .worm-gear{
+        left: 1070px;
+        bottom: 800px;
+        position: relative;
+        .gear-middle{
+          background: black;
+          width: 40px;
+          height: 210px;
+        }
+      }
+
     }
 
     .skills{
