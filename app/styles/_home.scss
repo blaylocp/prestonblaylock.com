@@ -101,7 +101,7 @@
         position: relative;
         left: 330px;
         @supports (-webkit-mask-image: url('/assets/images/icons/cog-1.svg')){
-          background-color: grey;
+          background-color: #cac7c7;
           -webkit-mask-image: url('/assets/images/icons/cog-1.svg');
           mask-image: url('/assets/images/icons/cog-1.svg');
         }
@@ -113,7 +113,7 @@
         left: 510px;
         bottom: 60px;
         @supports (-webkit-mask-image: url('/assets/images/icons/cog-2.svg')){
-          background-color: grey;
+          background-color: #cac7c7;
           -webkit-mask-image: url('/assets/images/icons/cog-2.svg');
           mask-image: url('/assets/images/icons/cog-2.svg');
         }
@@ -125,7 +125,7 @@
         left: 600px;
         bottom: 285px;
         @supports (-webkit-mask-image: url('/assets/images/icons/cog-3.svg')){
-          background-color: grey;
+          background-color: #cac7c7;
           -webkit-mask-image: url('/assets/images/icons/cog-3.svg');
           mask-image: url('/assets/images/icons/cog-3.svg');
         }
@@ -138,7 +138,7 @@
         bottom: 675px;
         transform: rotate("1deg");
         @supports (-webkit-mask-image: url('/assets/images/icons/cog-4.svg')){
-          background-color: grey;
+          background-color: #cac7c7;
           -webkit-mask-image: url('/assets/images/icons/cog-4.svg');
           mask-image: url('/assets/images/icons/cog-4.svg');
         }
