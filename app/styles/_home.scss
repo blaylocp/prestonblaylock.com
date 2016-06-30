@@ -91,6 +91,10 @@
     }
 
     .development{
+      height: 260px;
+      // overflow: hidden;
+      position: relative;
+      bottom: 80px;
       #cog-1{
         width: 240px;
         height: 240px;
@@ -112,6 +116,31 @@
           background-color: grey;
           -webkit-mask-image: url('/assets/images/icons/cog-2.svg');
           mask-image: url('/assets/images/icons/cog-2.svg');
+        }
+      }
+      #cog-3{
+        width: 192px;
+        height: 192px;
+        position: relative;
+        left: 600px;
+        bottom: 285px;
+        @supports (-webkit-mask-image: url('/assets/images/icons/cog-3.svg')){
+          background-color: grey;
+          -webkit-mask-image: url('/assets/images/icons/cog-3.svg');
+          mask-image: url('/assets/images/icons/cog-3.svg');
+        }
+      }
+      #cog-4{
+        width: 432px;
+        height: 432px;
+        position: relative;
+        left: 770px;
+        bottom: 675px;
+        transform: rotate("1deg");
+        @supports (-webkit-mask-image: url('/assets/images/icons/cog-4.svg')){
+          background-color: grey;
+          -webkit-mask-image: url('/assets/images/icons/cog-4.svg');
+          mask-image: url('/assets/images/icons/cog-4.svg');
         }
       }
     }
