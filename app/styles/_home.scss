@@ -165,6 +165,15 @@
           width: 40px;
           height: 210px;
         }
+        .gear-teeth{
+          background: url('/assets/images/icons/worm-gear-teeth.svg');
+          width: 120px;
+          height: 100%;
+          position: absolute;
+          left: -28px;
+          bottom: 10px;
+          background-position-y: 0;
+        }
       }
 
     }
