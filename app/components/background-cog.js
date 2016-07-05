@@ -14,7 +14,6 @@ export default Ember.Component.extend({
 
     this.$(window).scroll(function () {
         if(theDirection === "forward"){
-          console.log("Working");
           // $cog.css({
           //     'transform': 'rotate(' + ($body.scrollTop() / bodyHeight * 360) + 'deg)'
           // });

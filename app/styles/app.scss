@@ -41,7 +41,7 @@ hr.border-bottom{
 }
 
 .main-text{
-    // margin: 30px 10px; 
+    // margin: 30px 10px;
     color: #777;
     font-size: 2rem;
     font-weight: 200;
@@ -56,10 +56,10 @@ hr.border-bottom{
   animation-name: slidebodyReverse;
   min-height: 100%;
   /* equal to footer height z*/
-  margin-bottom: -20; 
+  margin-bottom: -20;
   position: relative;
 
-  .header-wrapper{ 
+  .header-wrapper{
     right: 0px;
     animation-duration: 1s;
     animation-name: slidebodyReverse;
@@ -70,7 +70,7 @@ hr.border-bottom{
     animation-duration: 1s;
     animation-name: slidebody;
     right: $slideMenu;
-    .header-wrapper{ 
+    .header-wrapper{
       right: $slideMenu;
       animation-duration: 1s;
       animation-name: slidebody;
@@ -86,7 +86,7 @@ hr.border-bottom{
 
 
 /***********************************************
-   HEADER 
+   HEADER
 ************************************************/
 
 
@@ -95,9 +95,9 @@ hr.border-bottom{
   background: $black;
   color: $white;
   position: fixed;
-  top: 0; 
+  top: 0;
   right: 0;
-  z-index: 1;
+  z-index: 2;
 
   .main-menu-header{
     height: 60px;
@@ -126,7 +126,7 @@ hr.border-bottom{
       font-size: 3rem;
       color: $orange;
       margin-top: 14px;
-      @media (min-width: 768px) { 
+      @media (min-width: 768px) {
         display: none;
       }
     }
@@ -137,8 +137,8 @@ hr.border-bottom{
       ul{
         li{
           a{
-            color: $white; 
-            font-weight: bold; 
+            color: $white;
+            font-weight: bold;
             font-size: 2rem;
             &.active,
             &:hover{color: $orange; text-decoration: none;}
@@ -146,9 +146,9 @@ hr.border-bottom{
         }
       }
 
-      
 
-      @media (min-width: 768px) { 
+
+      @media (min-width: 768px) {
         display: block;
       }
     }
@@ -176,7 +176,7 @@ hr.border-bottom{
     }
     &.normal {
       background: $black;
-      @media (min-width: 768px) { 
+      @media (min-width: 768px) {
         background: none;
       }
       .main-menu-header{
@@ -185,7 +185,7 @@ hr.border-bottom{
       }
     }
 
- @media (min-width: 768px) { 
+ @media (min-width: 768px) {
     background: none;
   }
 }
@@ -270,7 +270,7 @@ hr.border-bottom{
 ************************************************/
 
 .site-footer, .page-wrap:after {
-  height: 20; 
+  height: 20;
 }
 
 .site-footer {
@@ -288,17 +288,17 @@ hr.border-bottom{
 
   .search{
     padding-top: 20px;
-    
+
     input{
-      border-radius: 0;  
+      border-radius: 0;
       width: 100%;
     }
     button{
-      position: absolute; 
-      top: 20px; 
-      right: 15px; 
-      border-radius: 0; 
-      background: black; 
+      position: absolute;
+      top: 20px;
+      right: 15px;
+      border-radius: 0;
+      background: black;
       color: white;
       &:hover{
         color: $orange;
