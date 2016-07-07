@@ -54,6 +54,7 @@
   },
   "dependencies": {
     "broccoli-sass-source-maps": "^1.6.0",
-    "ember-cli-version-checker": "^1.1.6"
+    "ember-cli-version-checker": "^1.1.6",
+    "isotope-layout": "^3.0.1"
   }
 }
