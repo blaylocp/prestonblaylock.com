@@ -1,0 +1,108 @@
+.portfolio{
+  .header-wrapper{background: $black;}
+}
+
+#portfolio-masonry{
+  margin-top: 100px;
+  .grid-item{
+    float: left;
+    width: 100%;
+    height: 240px;
+    overflow: hidden;
+    background-size: cover !important;
+
+    &.grid-height-half{height: 120px;}
+    &.grid-height-one-half{height: 360px;}
+    &.grid-height-two{height: 480px;}
+    &.grid-height-two-half{height: 600px;}
+    &.grid-height-three{height: 720px;}
+    img{
+      // height: 100%;
+      // position: absolute;
+      // left: 50%;
+      // top: 0;
+      // transform: translateX(-50%);
+      // // top: 50%;
+      // // transform: translate(-50%, -50%);
+      // animation-name: portfolio-shrink;
+      // animation-duration: .8s;
+
+    }
+    a{
+      width: 100%;
+      height: 100%;
+      display: block;
+      position: relative;
+    }
+    .portfolio-name{
+      opacity: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 3em;
+      z-index: 1;
+      color: #fff;
+      width: 80%;
+      text-align: center;
+      text-decoration: none;
+      animation-name: portfolio-hide;
+      animation-duration: .8s;
+    }
+    &:hover{
+      transform: scale(1.0);
+      img{
+        // animation-name: portfolio-grow;
+        // animation-duration: .8s;
+        // height: 102%;
+      }
+      .portfolio-name{
+        text-decoration: none;
+        animation-name: portfolio-show;
+        animation-duration: .8s;
+        opacity: 1;
+      }
+      a{
+        background: rgba(0,0,0, .5);
+        z-index: 1;
+      }
+    }
+
+    @media screen and (min-width: 639px) {
+      width: 50%;
+    }
+    @media screen and (min-width: 959px) {
+      width: 33.33333%;
+    }
+    @media screen and (min-width: 1279px) {
+      width: 25%;
+    }
+  }
+  .filter-button-group{
+    position: fixed;
+    bottom: 3%;
+    right: 3%;
+  }
+
+}
+
+@keyframes portfolio-grow {
+  from{height: 100%;}
+  to{height: 102%;}
+}
+
+@keyframes portfolio-shrink {
+  from{height: 102%;}
+  to{height: 100%;}
+}
+
+
+@keyframes portfolio-show{
+  from{opacity: 0;}
+  to{opacity: 1;}
+}
+
+@keyframes portfolio-hide{
+  from{opacity: 1;}
+  to{opacity: 0;}
+}

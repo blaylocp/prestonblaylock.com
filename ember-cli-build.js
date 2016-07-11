@@ -22,6 +22,8 @@ module.exports = function(defaults) {
 
 
   app.import('bower_components/scroll-parallax/dist/Parallax.js');
+  app.import('bower_components/isotope/dist/isotope.pkgd.js');
+
 
   return app.toTree();
 };

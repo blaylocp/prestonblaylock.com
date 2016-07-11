@@ -1,1 +1,18 @@
 {{outlet}}
+{{log model}}
+{{#masonry-grid masonId="portfolio-masonry" items=model}}
+  {{#each model as |item|}}
+    <div class="grid-item grid-height-{{item.height}}" style="background: url({{item.img}}) center center">
+      {{!-- <img src="{{item.img}}" title="{{item.name}}" alt="{{item.name}}" /> --}}
+      {{#link-to 'index'}}
+        <span class="portfolio-name">{{item.name}}</span>
+      {{/link-to}}
+    </div>
+  {{/each}}
+  <div class="button-group filter-button-group">
+    <button data-filter="*">All</button>
+    <button data-filter=".website">Websites</button>
+    <button data-filter=".photography">Photography</button>
+    <button data-filter=".photography">Design</button>
+  </div>
+{{/masonry-grid}}
