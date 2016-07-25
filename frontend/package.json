@@ -41,6 +41,7 @@
     "ember-disable-proxy-controllers": "^1.0.1",
     "ember-export-application-global": "^1.0.4",
     "ember-font-awesome": "2.1.1",
+    "ember-froala": "2.3.3",
     "ember-keyboard": "1.0.3",
     "ember-modal-dialog": "0.8.4",
     "ember-new-computed": "1.0.3",

@@ -17,7 +17,8 @@
     "font-awesome": "^4.6.3",
     "scroll-parallax": "^1.1.0",
     "dom-ruler": "0.1.13",
-    "isotope": "^3.0.1"
+    "isotope": "^3.0.1",
+    "froala-wysiwyg-editor": "^2.3.3"
   },
   "resolutions": {
     "ember": "2.2.0"

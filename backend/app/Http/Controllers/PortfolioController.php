@@ -5,8 +5,9 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 
 use App\Http\Requests;
+use App\Models\PortfolioModel;
 
-class Portfolio extends Controller
+class PortfolioController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,7 +16,10 @@ class Portfolio extends Controller
      */
     public function index()
     {
-        //
+        dd(PortfolioModel::all());
+
+        // $portfolio = Portfolio::all();
+        dd("Dead");
     }
 
     /**
@@ -26,6 +30,7 @@ class Portfolio extends Controller
     public function create()
     {
         //
+        dd("Create");
     }
 
     /**
@@ -37,6 +42,7 @@ class Portfolio extends Controller
     public function store(Request $request)
     {
         //
+        dd("Store");
     }
 
     /**
@@ -48,6 +54,7 @@ class Portfolio extends Controller
     public function show($id)
     {
         //
+        dd("sybase_fetch_row");
     }
 
     /**
@@ -59,6 +66,7 @@ class Portfolio extends Controller
     public function edit($id)
     {
         //
+        dd("Edit");
     }
 
     /**
@@ -71,6 +79,7 @@ class Portfolio extends Controller
     public function update(Request $request, $id)
     {
         //
+        dd("Update");
     }
 
     /**
@@ -82,5 +91,6 @@ class Portfolio extends Controller
     public function destroy($id)
     {
         //
+        dd("Destoy");
     }
 }

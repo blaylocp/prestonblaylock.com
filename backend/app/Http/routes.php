@@ -11,10 +11,34 @@
 |
 */
 
+
+// $app->group([
+//   'middleware' => ['auth'],
+//   'prefix'     => "api/v1/",
+// ], function () use ($app) {
+//
+//   // API routes
+//   $registerCRUD = function ($type, $controllerClass) use ($app) {
+//     $app->get("$type", $controllerClass . '@index');
+//     $app->get("$type/{idx}", $controllerClass . '@show');
+//     $app->post("$type", $controllerClass . '@store');
+//     $app->patch("$type/{idx}", $controllerClass . '@update');
+//     $app->delete("$type/{idx}", $controllerClass . '@destroy');
+//   };
+//
+//   $registerCRUD("portfolio", PortfolioController::class);
+//
+// });
+
+
+
+
 Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('foo', function() {
-  return 'Hello World';
+Route::group([
+    'prefix'     => 'api/v1/',
+], function() {
+       Route::resource('portfolio', 'PortfolioController');
 });
