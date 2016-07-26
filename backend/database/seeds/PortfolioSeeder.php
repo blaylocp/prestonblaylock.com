@@ -14,9 +14,27 @@ class PortfolioSeeder extends Seeder
     {
         //Insert Beginning Portfolio
         DB::table(PortfolioModel::TABLE_NAME)->insert([
-            'name' => str_random(10),
-            'email' => str_random(10).'@gmail.com',
-            'password' => bcrypt('secret'),
+            'portfolio_name' => 'CMC Live',
+            'portfolio_featured_image' => '/vender/img/test.png',
+            'portfolio_desc' => 'This is a test of the broadcast system',
+        ]);
+
+        DB::table(PortfolioModel::TABLE_NAME)->insert([
+            'portfolio_name' => 'Castle rock',
+            'portfolio_featured_image' => '/vender/img/test.png',
+            'portfolio_desc' => 'This is a test of the broadcast system',
+        ]);
+
+        DB::table(PortfolioModel::TABLE_NAME)->insert([
+            'portfolio_name' => 'Devil\'s Gate',
+            'portfolio_featured_image' => '/vender/img/test.png',
+            'portfolio_desc' => 'This is a test of the broadcast system',
+        ]);
+
+        DB::table(PortfolioModel::TABLE_NAME)->insert([
+            'portfolio_name' => 'Wedding',
+            'portfolio_featured_image' => '/vender/img/test.png',
+            'portfolio_desc' => 'This is a test of the broadcast system',
         ]);
     }
 }
