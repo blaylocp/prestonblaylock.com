@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use \Neomerx\JsonApi\Document\Link;
 use \Neomerx\JsonApi\Encoder\Encoder;
 use \Neomerx\JsonApi\Encoder\Parameters\EncodingParameters;
+use \Neomerx\JsonApi\Encoder\EncoderOptions;
 use App\Http\Requests;
 use App\Models\PortfolioModel;
 use App\Schemas\PortfolioSchema;
@@ -21,10 +22,22 @@ class PortfolioController extends Controller
      */
     public function index()
     {
-        dd(PortfolioModel::all());
+        $portfolios = array();
+        $elquentPortfolios = PortfolioModel::all();
 
-        // $portfolio = Portfolio::all();
-        dd("Dead");
+
+        foreach ($elquentPortfolios as $key => $value) {
+          # code...
+          array_push($portfolios, $value);
+        }
+
+
+        $encoder = Encoder::instance([
+          PortfolioModel::class => PortfolioSchema::class,
+        ], new EncoderOptions(JSON_PRETTY_PRINT));
+
+        echo "<pre>" . $encoder->encodeData($portfolios) . "</pre>";
+
     }
 
     /**
@@ -61,15 +74,11 @@ class PortfolioController extends Controller
         //
         $portfolio = PortfolioModel::find($id);
 
-        // $encoder = Encoder::instance([
-        //   PortfolioModel::class => PortfolioSchema::class,
-        // ], new EncoderOptions(JSON_PRETTY_PRINT));
-
         $encoder = Encoder::instance([
           PortfolioModel::class => PortfolioSchema::class,
-        ]);
+        ], new EncoderOptions(JSON_PRETTY_PRINT));
 
-        echo $encoder->encodeData($portfolio);
+        echo "<pre>" . $encoder->encodeData($portfolio) . "</pre>";
 
     }
 

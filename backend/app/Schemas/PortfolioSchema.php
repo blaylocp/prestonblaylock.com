@@ -10,6 +10,8 @@ use App\Models\PortfolioModel as Model;
 
 class PortfolioSchema extends SchemaProvider {
 
+  protected $resourceType = 'portfolio';
+
   public function getId($portfolio) {
     return $portfolio->id;
   }
