@@ -22,6 +22,7 @@ var items = [
 
 export default Ember.Route.extend({
   model() {
-    return items;
+    //return items;
+    return this.store.findAll('portfolio');
   }
 });

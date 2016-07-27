@@ -38,5 +38,5 @@ Route::get('/', function () {
 Route::group([
     'prefix'     => 'api/v1/',
 ], function() {
-       Route::resource('portfolio', 'PortfolioController');
+       Route::resource('portfolios', 'PortfolioController');
 });
