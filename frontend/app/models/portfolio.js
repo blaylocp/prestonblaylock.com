@@ -1,8 +1,7 @@
 import DS from 'ember-data';
-import attr from 'ember-data/attr';
 
 export default DS.Model.extend({
-  name: attr(),
-  image_url: attr(),
-  desc: attr()
+  name: DS.attr(),
+  image_url: DS.attr(),
+  desc: DS.attr()
 });

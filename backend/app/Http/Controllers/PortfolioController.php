@@ -25,9 +25,9 @@ class PortfolioController extends Controller
         $portfolios = array();
         $elquentPortfolios = PortfolioModel::all();
 
-
         foreach ($elquentPortfolios as $key => $value) {
           # code...
+          $value['portfolio_featured_image'] = storage_path($value['portfolio_featured_image']);
           array_push($portfolios, $value);
         }
 
@@ -36,7 +36,7 @@ class PortfolioController extends Controller
           PortfolioModel::class => PortfolioSchema::class,
         ], new EncoderOptions(JSON_PRETTY_PRINT));
 
-        echo "<pre>" . $encoder->encodeData($portfolios) . "</pre>";
+        echo $encoder->encodeData($portfolios);
 
     }
 

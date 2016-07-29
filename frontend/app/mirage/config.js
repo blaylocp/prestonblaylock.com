@@ -1,13 +1,13 @@
 export default function() {
 
-  this.get('/skills', function() {
+  this.get('/api/v1/skills', function() {
     return {
       data: [{
         type: 'skill',
         id: 1,
         attributes: {
           name: 'Sass',
-          image: '/assets/images/skills/sass.png' 
+          image: '/assets/images/skills/sass.png'
         }
       }, {
         type: 'skill',
