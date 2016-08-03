@@ -27,7 +27,7 @@ class PortfolioController extends Controller
 
         foreach ($elquentPortfolios as $key => $value) {
           # code...
-          $value['portfolio_featured_image'] = storage_path($value['portfolio_featured_image']);
+          $value['portfolio_featured_image'] = 'http://localhost:8000/api/v1/images/portfolios/' . $value['portfolio_featured_image'];
           array_push($portfolios, $value);
         }
 
