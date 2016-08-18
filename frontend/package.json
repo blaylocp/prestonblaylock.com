@@ -51,7 +51,7 @@
     "ember-responsive": "1.2.6",
     "ember-truth-helpers": "1.2.0",
     "ember-windoc": "0.1.5",
-    "liquid-fire": "0.23.0"
+    "liquid-fire": "0.24.1"
   },
   "dependencies": {
     "broccoli-sass-source-maps": "^1.6.0",

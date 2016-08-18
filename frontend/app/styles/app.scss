@@ -259,10 +259,12 @@ hr.border-bottom{
   }
 }
 
+//@import "components/content-editor";
 @import "form";
 @import "home";
 @import "about";
 @import "portfolio";
+@import "pages/portfolio-item";
 
 
 

@@ -1,11 +1,9 @@
-{{outlet}}
-{{log model}}
+{{liquid-outlet}}
 {{#masonry-grid masonId="portfolio-masonry" items=model}}
   {{#each model as |item|}}
-  {{item.image}}
-    <div class="grid-item grid-height-{{item.height}}" style="background: url({{item.image}}) center center">
+    <div class="grid-item grid-height-{{item.height}}" style="background: url({{image-url (escape-css item.image) size='portfolios'}}) center center">
       {{!-- <img src="{{item.img}}" title="{{item.name}}" alt="{{item.name}}" /> --}}
-      {{#link-to 'index'}}
+      {{#link-to 'portfolio.item' item.id}}
         <span class="portfolio-name">{{item.name}}</span>
       {{/link-to}}
     </div>

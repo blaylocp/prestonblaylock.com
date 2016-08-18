@@ -18,7 +18,8 @@
     "scroll-parallax": "^1.1.0",
     "dom-ruler": "0.1.13",
     "isotope": "^3.0.1",
-    "froala-wysiwyg-editor": "^2.3.3"
+    "froala-wysiwyg-editor": "^2.3.3",
+    "ContentTools": "^1.2.10"
   },
   "resolutions": {
     "ember": "2.2.0"

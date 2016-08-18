@@ -6,7 +6,10 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
-  this.route('portfolio');
+  this.route('portfolio', function() {
+    this.route('item', {path: '/item/:item_id'});
+    this.route('edit', {path: '/item/:item_id/edit'});
+  });
   this.route('about');
   this.route('blog');
   this.route('contact');

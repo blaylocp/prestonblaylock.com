@@ -19,7 +19,7 @@ class CreatePortfoliosTable extends Migration
             $table->increments(PortfolioModel::PORTFOLIO_ID);
             $table->string(PortfolioModel::PORTFOLIO_NAME, 50);
             $table->string(PortfolioModel::PORTFOLIO_FEATURED_IMG);
-            $table->binary(PortfolioModel::PORTFOLIO_DESC);
+            $table->longText(PortfolioModel::PORTFOLIO_DESC);
             $table->timestamps();
             $table->softDeletes();
         });

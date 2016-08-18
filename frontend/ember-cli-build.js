@@ -23,6 +23,10 @@ module.exports = function(defaults) {
 
   app.import('bower_components/scroll-parallax/dist/Parallax.js');
   app.import('bower_components/isotope/dist/isotope.pkgd.js');
+  app.import('bower_components/ContentTools/build/content-tools.min.js');
+  app.import('bower_components/ContentTools/build/content-tools.min.css');
+  app.import('bower_components/ContentTools/build/icons.woff');
+  //app.import('bower_components/ContentTools/build/images');
 
 
   return app.toTree();
